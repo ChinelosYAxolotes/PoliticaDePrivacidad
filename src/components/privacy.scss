@@ -1,0 +1,95 @@
+@font-face {
+  font-family: 'AxolotitoFont';
+  src: url('../assets/fonts/fipps-regular-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'AxolotitoFontFill';
+  src: url('../assets/fonts/fippsfilled-regular-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.privacyAxolotito {
+  background: url('/bg.png') no-repeat center center fixed;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  font-family: 'Press Start 2P', monospace;
+}
+
+.crystal {
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 1rem;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+
+  width: 100%;
+  max-width: 800px;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.contentBox {
+  font-family: 'Arial', monospace;
+  background: rgba(255, 255, 255, 0.95); // near solid white
+  color: #111; // dark text
+  border-radius: 1rem;
+  padding: 2rem;
+  max-height: 100%;
+}
+
+.header {
+  text-align: center;
+}
+
+.title {
+  position: relative;
+  font-size: 2em;
+  line-height: 1;
+  height: 1em;
+  text-align: center;
+}
+
+.title .outline,
+.title .fill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  user-select: none;
+}
+
+.title .outline {
+  font-family: 'AxolotitoFont', sans-serif; // Fuente de borde
+  color: black;
+  z-index: 1;
+}
+
+.title .fill {
+  font-family: 'AxolotitoFontFill', sans-serif; // Fuente de relleno
+  color: #f995e6;
+  z-index: 0;
+}
+
+
+
+.main {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.footer {
+  text-align: center;
+  font-size: 0.6em;
+}
